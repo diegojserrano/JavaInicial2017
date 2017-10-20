@@ -54,13 +54,21 @@ public class Persona {
     public int edad() {
         return 2016 - nacimiento;
     }
-    
+
     public float IMC() {
         return peso / (altura * altura);
     }
-    
+
+    public int getEdad() {
+        return 2017 - nacimiento;
+    }
+
     public boolean esMayorDeEdad() {
         return edad() >= 18;
+    }
+    
+    public String getNombreCompleto() {
+        return nombre + " " + apellido;
     }
     
     public String toString() {
