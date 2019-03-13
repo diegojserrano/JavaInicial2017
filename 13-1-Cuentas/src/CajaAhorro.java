@@ -1,19 +1,20 @@
 public class CajaAhorro extends Cuenta {
 
-    public CajaAhorro(int numero) {
-        super(numero);
-    }
-
     @Override
     public void extraer(float importe) {
-        if (saldo >= importe)
+        if (saldo >= importe) {
             saldo -= importe;
+        }
+    }
+
+    public CajaAhorro(String cliente, int numero) {
+        super(cliente, numero);
     }
 
     @Override
     public String toString() {
-        return "Soy una CajaAhorro{" + super.toString() + '}';
+        return "CajaAhorro{" + '}';
     }
-
+    
     
 }
